@@ -1,0 +1,5 @@
+2.1 a)Porque las funciones variadicas, en este caso la funcion printf 
+tiene una coincidencia estricta de tipos, el formato %p espera un tipo void*. Esto tambien ayuda cuando se usa otras arquitecturas que usan otro tamaño o representacion.
+ b) Para la posicion de * en el primer caso, no hay diferencia funcional para el compilador. 
+ Para el segundo caso si existe una diferencia funcional, ya que si solo p tiene *, solo p sera un puntero, mientras que q sera una variable de tipo entera. Si ambos estan con *, p y q seran punteros 
+ 

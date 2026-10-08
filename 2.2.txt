@@ -1,0 +1,3 @@
+b) Porque C define el operador de [] como una conversion a aritmetica de punteros (p[i]=>*(p+i)).
+c) Como se explica en la b), el operador [] se traduce a arimetica de punteros, y para el caso de +, la operacion suma de punteros es conmutativa, asi que el compilador procesa igual si es *(3+p) o *(p+3).
+d) Si es valido, apunta a uno mas alla del ultimo elemento, sin embargo intentar leer o escribir en esa direccion provocara un undefined behavior.

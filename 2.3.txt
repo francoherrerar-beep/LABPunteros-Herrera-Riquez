@@ -1,0 +1,5 @@
+a)char *s crea un puntero en la pila que apunta al texto original guardado en una zona de memoria de sólo lectura.
+ char s[] crea un arreglo en la pila y copia los caracteres dentro de él, permitiendo modificarlos.
+b) Modificar un literal (char *s) es comportamiento no definido porque el compilador comparte para ahorrar memoria y el sistema protege esa zona contra escritura.
+Se usa char s[] si se va modificar el texto.
+c) *s si se requiere solo lectura y s[] si se necesita modificar.
