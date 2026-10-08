@@ -1,0 +1,18 @@
+1.1
+a. ¿Cómo se relaciona datos[i] con *(datos + i)? Probar ambas formas y
+confirmar que dan el mismo resultado.
+Dan el mismo resultado porque datos[i] es equivalente a *(datos + i).
+
+b. ¿Qué pasa si imprimen sizeof(datos) / sizeof(datos[0])? ¿Y si datos fuera un
+parámetro de función?
+Al imprimir sizeof(datos) imprime 40 y al imprimir sizeof(datos[0]) imprime 4
+Devolveria el tamaño de un puntero.
+
+1.2
+a. ¿Cómo se almacena int m[3][4] en memoria? ¿Es un bloque contiguo?
+Verifíquenlo imprimiendo &m[0][0], &m[0][1], &m[1][0] y observando las
+diferencias.
+Al imprimirlos me da direcciones de memoria en hexadecimal.
+
+b. ¿Cuál es la diferencia entre m[i][j] y *(*(m + i) + j)?
+No habria diferencia en el resultado porque ambos muestran el mismo elemento, solo que la segunda forma utiliza punteros.
